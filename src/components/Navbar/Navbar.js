@@ -1,14 +1,17 @@
 import React from "react";
 import logo from "../../static/logo.png";
-import { Nav, NavLink, Bars, NavMenu } from "./NavStyling";
+import { FaBars } from "react-icons/fa";
+import { Nav, NavLink, BarIcon, NavMenu } from "./NavStyling";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <NavLink to="/">
         <img src={logo} />
       </NavLink>
-      <Bars />
+      <BarIcon onClick={toggle}>
+        <FaBars />
+      </BarIcon>
       <NavMenu>
         <NavLink to="/">About</NavLink>
         <NavLink to="/">Expierience</NavLink>

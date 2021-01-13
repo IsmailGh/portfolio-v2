@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
 
 export const Nav = styled.nav`
   background: ;
@@ -25,9 +24,8 @@ export const NavLink = styled(Link)`
   cursor: pointer;
 `;
 
-export const Bars = styled(FaBars)`
+export const BarIcon = styled.div`
   display: none;
-  color: black;
 
   @media screen and (max-width: 1015px) {
     display: block;
